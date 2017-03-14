@@ -19,4 +19,4 @@ app.get('/', (req, res)=>{
     res.send(JSON.stringify(result));
 });
 
-app.listen(8080);
+app.listen(process.env.PORT || 5000);
